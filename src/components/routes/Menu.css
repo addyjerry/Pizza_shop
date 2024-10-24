@@ -1,0 +1,46 @@
+#Menu {
+  text-align: center;
+}
+#form #list {
+  place-self: center;
+  text-align: left;
+  font-size: 2rem;
+}
+#form {
+  margin-left: 10rem;
+  display: flex;
+  gap: 0rem;
+}
+#image__area {
+  box-shadow: black 0 5px 15px;
+  width: 15rem;
+  border-radius: 10px;
+  margin-left: 30rem;
+}
+#cost {
+  display: flex;
+  gap: 2rem;
+  place-self: center;
+}
+
+#image__area img {
+  border-radius: 10px;
+  width: 15rem;
+  height: 15rem;
+}
+form {
+  font-size: 2rem;
+}
+form input {
+  width: 20rem;
+  height: 3rem;
+  border-radius: 8px;
+  font-size: 2rem;
+}
+form button {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 8px;
+  margin-top: -5rem;
+  font-size: 2rem;
+}

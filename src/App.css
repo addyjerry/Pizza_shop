@@ -1,0 +1,62 @@
+#Header {
+  background: url(assets/back.jpeg);
+  height: 25rem;
+}
+#Header #cover {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 44%;
+  position: absolute;
+  background-color: rgba(17, 17, 17, 0.4);
+}
+#Header #logo__area {
+  z-index: 2;
+}
+#Header #logo__area img {
+  width: 15rem;
+}
+
+#Header #on-top {
+  color: white;
+  z-index: 2;
+  position: relative;
+  display: block;
+}
+#Header a {
+  color: white;
+}
+#Header #on-top h2 {
+  text-align: center;
+}
+#Header #logo__nav {
+  display: inline-flex;
+  gap: 40rem;
+}
+#Header #on-top ul {
+  display: flex;
+  gap: 8rem;
+  font-size: 1.5rem;
+  margin-top: 5rem;
+  font-weight: 700;
+}
+ul {
+  list-style: none;
+}
+#footer {
+  background-color: bisque;
+  text-align: center;
+  font-size: 2rem;
+}
+#footer .socials {
+  place-content: center;
+  display: flex;
+  gap: 2rem;
+}
+#Contact {
+  text-align: center;
+}
+#map {
+  margin-left: 5rem;
+  place-self: center;
+}

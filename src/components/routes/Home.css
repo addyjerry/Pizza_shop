@@ -1,0 +1,34 @@
+#pizza__cards {
+  margin: 5rem 3rem;
+  display: flex;
+  gap: 7rem;
+}
+#card {
+  box-shadow: black 0 5px 15px;
+  width: 15rem;
+  border-radius: 10px;
+}
+#card img {
+  border-radius: 10px;
+  width: 15rem;
+}
+#pizza__price {
+  display: flex;
+  gap: 4rem;
+}
+#pizza__price {
+  margin: 5px;
+}
+#pizza__texts h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+#pack__cards {
+  margin: 5rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 18rem);
+  grid-gap: 4rem;
+}
+#pack__cards #card img {
+  height: 8rem;
+}
