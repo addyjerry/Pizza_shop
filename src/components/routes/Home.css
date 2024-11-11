@@ -1,7 +1,7 @@
 #pizza__cards {
   margin: 5rem 3rem;
   display: flex;
-  gap: 7rem;
+  gap: 4.5rem;
 }
 #card {
   box-shadow: black 0 5px 15px;
@@ -26,9 +26,47 @@
 #pack__cards {
   margin: 5rem 3rem;
   display: grid;
-  grid-template-columns: repeat(4, 18rem);
-  grid-gap: 4rem;
+  grid-template-columns: repeat(4, 16rem);
+  grid-gap: 3rem;
 }
 #pack__cards #card img {
   height: 8rem;
+}
+
+@media (max-width: 600px) {
+  #pizza__cards {
+    margin: 5rem 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 10rem);
+    grid-gap: 1rem;
+  }
+  #card {
+    box-shadow: black 0 5px 15px;
+    width: 10rem;
+    border-radius: 10px;
+  }
+  #card img {
+    border-radius: 10px;
+    width: 10rem;
+  }
+  #pizza__price {
+    display: flex;
+    gap: 2rem;
+  }
+  #pizza__price h2 {
+    font-size: 1rem;
+  }
+  #pizza__texts h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  #pack__cards {
+    margin: 5rem 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 10rem);
+    grid-gap: 1rem;
+  }
+  #pack__cards #card img {
+    height: 8rem;
+  }
 }

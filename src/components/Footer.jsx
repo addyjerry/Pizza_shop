@@ -9,9 +9,17 @@ const Footer = () => {
     <div id="footer">
       <p>Follow us :</p>
       <div className="socials">
-        <FaSquareXTwitter />
-        <FaInstagram />
-        <FaFacebook />
+        <a href="https://x.com/JayCodes27?t=k513f8YOjzAOnOifSdw3mA&s=09">
+          {" "}
+          <FaSquareXTwitter />
+        </a>
+        <a href="https://www.instagram.com/kenkeyvylla/?hl=en">
+          <FaInstagram />
+        </a>
+        <a href="https://www.facebook.com/jay-jnr.395">
+          {" "}
+          <FaFacebook />
+        </a>
         <FaSquareSnapchat />
       </div>
       <p>

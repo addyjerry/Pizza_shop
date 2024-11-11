@@ -55,6 +55,41 @@ const Menu = () => {
   const handlePrice = (event) => {
     setPrice(event.target.value);
   };
+
+  {
+    /*function to handle user input */
+  }
+
+  const [name, setName] = useState("");
+  const [transaction, setTransaction] = useState("");
+  const [responseMessage, setResponseMessage] = useState("");
+
+  const handleInput = async (e) => {
+    e.preventDefault();
+
+    //gettiong the input
+    const formData = new FormData();
+    formData.append("name", name);
+    formData.append("transaction", transaction);
+
+    //using try and catch
+    try {
+      //sending data to backend
+      const response = await fetch(
+        "http://localhost:8012/Danny's%20Pizza/Pizza.php",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+      //response from backend
+      const result = await response.json();
+      setResponseMessage(response.message);
+    } catch (error) {
+      console.error("error", error);
+      setResponseMessage("There is an error in connection");
+    }
+  };
   return (
     <div id="Menu">
       <h2>Make your Order here ✍</h2>
@@ -104,16 +139,30 @@ const Menu = () => {
       </div>
 
       <h2>Send money to : 0552869466</h2>
-      <form>
+      <form onSubmit={handleInput}>
         <label>Name</label>
         <br />
-        <input type="text" placeholder="Kofi" />
+        <input
+          type="text"
+          placeholder="Kofi"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          required
+        />
         <br />
         <label>Transaction Id</label> <br />
-        <input type="text" placeholder="435672245678962" /> <br />
+        <input
+          required
+          type="text"
+          placeholder="435672245678962"
+          value={transaction}
+          onChange={(e) => setTransaction(e.target.value)}
+        />{" "}
+        <br />
         <h2>* Please do not delete transaction message</h2> <br />
-        <button> SUBMIT</button>
+        <button type="submit"> SUBMIT</button>
       </form>
+      {responseMessage && <p>{responseMessage}</p>}
     </div>
   );
 };

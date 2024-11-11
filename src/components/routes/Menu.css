@@ -44,3 +44,50 @@ form button {
   margin-top: -5rem;
   font-size: 2rem;
 }
+
+@media (max-width: 600px) {
+  #Menu {
+    text-align: center;
+  }
+  #form {
+    margin-left: 0rem;
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 0rem;
+  }
+  #form #list {
+    place-self: left;
+    text-align: left;
+    font-size: 1rem;
+  }
+  #image__area {
+    box-shadow: black 0 5px 15px;
+    width: 10rem;
+    border-radius: 10px;
+    margin-left: 3rem;
+  }
+  #image__area img {
+    border-radius: 10px;
+    width: 10rem;
+    height: 7rem;
+  }
+  #image__area h2 {
+    font-size: 1rem;
+  }
+  form {
+    font-size: 1rem;
+  }
+  form input {
+    width: 15rem;
+    height: 2rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+  }
+  form button {
+    width: 8rem;
+    height: 2rem;
+    border-radius: 8px;
+    margin-top: -5rem;
+    font-size: 1.1rem;
+  }
+}
